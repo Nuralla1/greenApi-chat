@@ -66,7 +66,7 @@ export const SideBar = () => {
           onKeyDown={handleKeyDown}
         />
       </div>
-      <Scroll height="560px">
+      <Scroll height="570px">
         <div className={contacts_wrapper}>
           {contacts.map((user) => (
             <div className={users_wrapper} key={user.id}>

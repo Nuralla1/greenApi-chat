@@ -39,7 +39,7 @@ export const ChatBody = ({ outMsgs }) => {
   );
   return (
     <div className={styles.chatContainer}>
-      <Scroll height="560px" className={styles.messageContainer}>
+      <Scroll className={styles.messageContainer}>
         {sortedMessages.map((msg, index) => (
           <div
             key={msg.receiptId + index}
