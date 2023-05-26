@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "./Sidebar.module.css";
+import styles from "./SideBar.module.css";
 import { Scroll } from "../Scroll";
 import { SideBarHeader } from "../SideBarHeader";
 import Avatar from "../../assets/photo.png";
