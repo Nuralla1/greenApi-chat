@@ -18,6 +18,7 @@
 Откройте [http://localhost:5173](http://localhost:5173) для просмотра проекта локально в бразуере.
 
 Если вы хотите посмотреть проект без установки локально, вы можете пройти по ссылке :
+[https://resilient-pony-d10b21.netlify.app](https://resilient-pony-d10b21.netlify.app)
 
 ## Functionality
 
