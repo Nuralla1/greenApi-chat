@@ -11,26 +11,26 @@ export const ChatBody = ({ outMsgs }) => {
   const { getMessage, deleteMessage } = useAPIService();
   const phoneNumber = sessionStorage.getItem("phoneNumber");
 
-  //   useEffect(() => {
-  // if(phoneNumber) {
-  //     const connectChat = async () => {
-  //       const getResponse = await getMessage();
-  //       if (getResponse.data) {
-  //         getResponse.data.body.timestamp =
-  //           getResponse.data?.body?.timestamp * 1000;
-  //         setInMsgs((prev) => [...prev, getResponse.data]);
-  //         await deleteMessage(getResponse.data.receiptId);
-  //       } else {
-  //         setFlag((prev) => !prev);
-  //       }
-  //     };
-  //     const interval = setInterval(async () => await connectChat(), 5000);
+  useEffect(() => {
+    if (phoneNumber) {
+      const connectChat = async () => {
+        const getResponse = await getMessage();
+        if (getResponse.data) {
+          getResponse.data.body.timestamp =
+            getResponse.data?.body?.timestamp * 1000;
+          setInMsgs((prev) => [...prev, getResponse.data]);
+          await deleteMessage(getResponse.data.receiptId);
+        } else {
+          setFlag((prev) => !prev);
+        }
+      };
+      const interval = setInterval(async () => await connectChat(), 5000);
 
-  //     return () => {
-  //       clearInterval(interval);
-  //     };
-  // }
-  //   }, []);
+      return () => {
+        clearInterval(interval);
+      };
+    }
+  }, []);
 
   const allMessages = [...inMsgs, ...outMsgs];
 

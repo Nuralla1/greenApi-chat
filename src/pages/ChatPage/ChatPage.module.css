@@ -9,4 +9,5 @@
 
 .chat_wrapper {
   flex: 1;
+  width: 100%;
 }
