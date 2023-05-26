@@ -86,27 +86,5 @@ export const ChatBody = ({ outMsgs }) => {
         ))}  */}
       </Scroll>
     </div>
-    // <div>
-    //   <Scroll height="560px">
-    //     {inMsgs?.map((msg, index) => (
-    //       <div key={msg.receiptId + index}>
-    //         <p>{msg?.body?.senderData?.senderName}</p>
-    //         <span>
-    //           {new Date(msg?.body?.timestamp * 1000).toLocaleDateString(
-    //             "en-GB"
-    //           )}
-    //         </span>
-    //         <p>{msg?.body?.messageData?.textMessageData?.textMessage}</p>
-    //       </div>
-    //     ))}
-    //     {outMsgs?.map((msg, index) => (
-    //       <div key={index}>
-    //         <p>{msg?.sender}</p>
-    //         <span>{msg.date.toLocaleDateString("en-GB")}</span>
-    //         <p>{msg?.message}</p>
-    //       </div>
-    //     ))}
-    //   </Scroll>
-    // </div>
   );
 };
