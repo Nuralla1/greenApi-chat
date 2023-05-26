@@ -1,0 +1,12 @@
+.container {
+  min-width: 900px;
+  display: flex;
+  flex-direction: column;
+  min-height: 75vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat_wrapper {
+  flex: 1;
+}

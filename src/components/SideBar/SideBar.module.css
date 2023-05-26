@@ -1,0 +1,45 @@
+.container {
+  max-width: 400px;
+  border-right: 1px solid rgba(182, 170, 170, 0.5);
+}
+
+.searchBar {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  border-bottom: 1px solid rgba(182, 170, 170, 0.5);
+  border-top: 1px solid rgba(182, 170, 170, 0.5);
+  background-color: rgb(202, 198, 193);
+}
+.searchBar input {
+  padding: 10px;
+  border: none;
+  width: 350px;
+  border-radius: 5px;
+}
+
+.users_wrapper {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  gap: 15px;
+}
+
+.users_wrapper:hover {
+  background-color: antiquewhite;
+}
+
+.username {
+  font-weight: 800;
+}
+
+.time {
+  color: grey;
+  font-style: italic;
+  font-size: 10px;
+}
+
+.contacts_wrapper {
+  background-color: rgb(202, 198, 193);
+}

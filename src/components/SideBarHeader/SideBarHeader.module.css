@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  align-items: center;
+  background-color: #e2d6c0;
+  padding: 15px;
+  height: 85px;
+}
+
+.wrapper {
+  flex: 1;
+}
+
+.icon_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 5px;
+}
+.icon_wrapper:hover {
+  background-color: rgba(204, 211, 211, 0.815);
+}
+
+.right_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
